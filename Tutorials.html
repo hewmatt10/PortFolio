@@ -1,0 +1,434 @@
+<html>
+<head>
+<title>Personal Website</title>
+<link rel="stylesheet" href="style.css" />
+<!--source: "https://getbootstrap.com/"-->
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+/>
+<!--source: "https://www.bootstrapcdn.com/fontawesome/"-->
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<!--source: "https://getbootstrap.com/"-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+</head>
+<body>
+<!--Nav Bar-->
+<section id="nav-bar">
+<!--source: "https://getbootstrap.com/docs/4.5/components/navbar/"-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#"
+><img src="img/logo.jpg" style="border-radius: 50%;"
+/></a>
+<button
+class="navbar-toggler"
+type="button"
+data-toggle="collapse"
+data-target="#navbarNav"
+aria-controls="navbarNav"
+aria-expanded="false"
+aria-label="Toggle navigation"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" href="Main.html"
+>Home <span class="sr-only">(current)</span></a
+>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Project.html"
+>Past and Current Projects</a
+>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Tutorials</a>
+</li>
+</ul>
+</div>
+</nav>
+</section>
+<section id = "project">
+<div class = "container">
+<h1>Tutorials</h1>
+</div>
+</section>
+<section id="Tutorials">
+<div id="OOP">
+<div class="row">
+<div class="col-md-6">
+<h2>Object Oriented Programming</h2>
+<p>
+Object Oriented Programming, or OOP for short, is a programming
+model/idea based off of the idea of objects. The main idea of
+object oriented programming is to use classes as datatypes in
+order to achieve tasks that procedural programming cannot, or
+simplify them. This is because of structures, or objects, that
+store data, which greatly reduces the amount of code written and
+associates variables with similar attributes together. OOP allows
+for different programming problems to be broken down into smaller
+problems. Drawing this diagram of decomposition results in a tree.
+OOP allows for the ease of creating and modifying objects and
+methods with ease and focuses on the data rather than the
+procedure. Lastly, a key feature and concept in OOP is
+encapsulation, which is the idea of hiding/private variables to
+prevent accidental modification to variables when unecessary. 
+</p>
+<p>
+Once again, it is clear that this is a class that has certain attributes. In order to use this class, one must create an instance of the 
+class and then add data to it. The idea of OOP is to use many of these classes, such as the one above, that do different tasks
+to get the program to work. OOP is often used in large frameworks to organize data. As an example, an ATM machine could be a class, where
+the user can choose different button to do different tasks. The button is then considered an interface, or an affliction of attributes that 
+are common amongst different classes. Each button can be a new class, representing a different set of attributes that differentiate them.
+The fundamental idea of OOP is using classes, and for classes, one needs a constructor, something that allows for one to create an instance variable of the class.
+
+
+</p>
+<p>
+The first key concept in OOP is encapsulation, or the idea of hiding variables so only methods within a class can access the variable.
+This extends to hiding methods so only variables declared as the class' type can access and use the methods. Encapsulation prevents the 
+overwriting of data and keeps what is being done organize and well built. Without encapsulation, data would be freefloating in the program
+and that is disorganized and often times, very hard to manage/code.
+</p>
+<p>
+Another key idea in OOP is inheritance. It is when a subclass can be a superclass. In other words, it is when one moves down a tree of
+relationships, where each of a node's children is a type of the parent but not necessarily vice versa. This is where encapsulation becomes important
+as parent classes cannot access all methods of the children class unless initialized as one.
+</p>
+<p>
+Abstract classes are classes that have specific attributes and functions. One cannot declare a variable of an abstract data type. However,
+through inheritance, a subclass can be extending an abstract class, which can then be a variable. Abstract classes allows the affliction 
+between closely related classes and can form relationships, being able to use classes of the abstract class. There is also interfaces, essentially
+for relationships for objects that do similar tasks but cannot have similar variables. However, the idea is the same as abstract classes.
+</p>
+<p>
+Lastly, polymorphism is the idea of different classes inheriting abstract or interfaces. As an insight, a dog can be an abstract class,
+with fur, teeth, can bark, can eat, etc. However, differernt breeds of dogs have different attributes afflicted with them and are thus different classes.
+Polymorphism uses this idea of different classes having similar attributes being connected by a superclass that is an abstract class or interface.
+</p>
+
+<a href="https://www.w3schools.com/java/java_oop.asp">
+    Read more here.
+</a>
+</div>
+<div class="col-md-6">
+<img src="img/oop.jpg" width="540px" height="360px"
+/>
+<pre class = "prettyprint">
+public class Circle{
+    int radius;
+    public Circle(int r){radius = r;}
+    public getArea(){return Math.PI * radius * radius;}
+    public getPerimeter(){return Math.PI * radius * 2;}
+}
+</pre>
+<pre class = "prettyprint">
+public class Rectangle{
+    private int length, width;
+    public Rectangle(int l, int w){
+        length = l;width = w;
+    }
+    public int getArea(){
+        return length*width;
+    }
+}
+</pre>
+<pre class = "prettyprint">
+public class Square extends Rectangle{
+    public Square(int l){
+        length = l;
+    }
+    public int getArea(){
+        return length*length;
+    }
+}
+</pre>
+<pre class = "prettyprint">
+public abstract class Dog{
+    String color, breed;
+    int mass, length, height;
+    public void bark(){System.out.println("bark");}
+    public abstract String getBreed();
+}
+</pre>
+<pre class = "prettyprint">
+public class GoldenRetriever extends Dog{
+    public String getBreed(){
+        return "Golden Retriever";
+    }
+}
+public class Poodle extends Dog{
+    public String getBreed(){
+        return "Poodle";
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="Arrays">
+<div class="row">
+<div class="col-md-6">
+<h2>Arrays</h2>
+<p>
+What are arrays? One can think of arrays as a set of values of a
+datatype. These values are then ordered starting from 0. However,
+the set is not infinite. In fact, before using the array, one must
+declare the array, which is telling the computer it exists. After
+that, to use the array, one must initialize it. This means they
+must allocate a part of the memory to the array. Then, when using
+the array, one assigns a value to each index of the array,
+starting at 0. This is the ordering of the array mentioned above.
+One can only assign values of the declared datatype into the
+array, and you cannot exceed the initialized size, because the
+computer has only given the initialized space to the array, and
+you cannot just allocate another space spontaenously. We can view the 
+syntax of arrays and declaration of the arrays on the left. We can clearly
+see that to access an element in an array we use [] and to initialize it,
+we create it like we are creating a class basically. 
+</p>
+<a href="https://www.w3schools.com/java/java_arrays.asp">
+Read more here.</a>
+</div>
+<div class="col-md-6">
+<pre class = "prettyprint">
+public static void main(String [] args){
+    int arr [] = new int [5];
+    arr[1] = 12;
+    arr[0] = 3;
+    arr[2] = 4;
+    arr[3] = 12;
+    arr[4] = 16;
+    //arr[5] = 14; error ArrayOutOfBoundsException
+    //The array right now {3,12,4,12,16}
+    for(int i = 0;i < 5;i++){
+        System.out.println(arr[i]);
+    }
+    /*Output
+    3
+    12
+    4
+    12
+    16
+    */
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="ArrayList">
+<div class="row">
+<div class="col-md-6">
+<h2>ArrayLists</h2>
+<p>
+When seeing the name ArrayList, one can instantly tell the
+components of the word; array and list. This word is exactly what
+it means. It is a list that acts similar to an array. How is it
+similar? Well, first of all, they are both indexed, and one can
+access both of them using the index to access that element in the
+ArrayList. However, the fundamental differences are also clear.
+Firstly, an ArrayList is a class, and thus its contents are not
+directly accessed and modified, but rather it is through methods.
+Next, an ArrayList is dynamic, what this means is that, unlike an
+array, one is able to constantly append elements to it (until
+overflow) because it does not have a static memory allocation.
+While this is convenient, ArrayLists are memory-consuming and are
+very slow because of constant allocation and indirect access to
+the memory.
+</p>
+<a href="https://www.w3schools.com/java/java_arraylist.asp">
+    Read more here.</a>
+</div>
+<div class="col-md-6">
+<pre class = "prettyprint">
+public static void main(String [] args){
+    Arraylist< Integer > list = new ArrayList<>();
+    list.add(1);
+    list.add(4);
+    list.add(20);
+    list.add(10);
+    System.out.println(list.get(2));//prints 20 since its index 2
+    list.set(2,5);//sets index 2 to value 5
+    System.out.println(list.get(2));//prints 5 since its index 2
+    //current list: {1,4,5,10}
+    list.remove(1)
+    for(int i : list){
+        System.out.println(i);
+    }
+    /*Output
+    1
+    5
+    10
+    */
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="Search">
+<div class="row">
+
+<div class="col-md-6">
+<h2>Searching</h2>
+<p>
+What is searching? In english, it means the process of finding
+something. In programming, it means the exact same thing, except
+one would actually know how to find it. Searching in programming,
+in short, is to find a value in an associated set of values. The
+search range for this value could be a set, an ArrayList, an
+array, or even an array of ArrayLists, it is merely a term for
+saying "finding an element in a bunch of elements". A simple
+sorting technique is to simply traverse through all the elements.
+By the pigeonhole principle or trivial intuition, if you pass
+through the all the elements, and your target was not found, then
+the target is not found in the set, and trivially, the opposite
+holds true. Another searching algorithm is binary search. This
+requires one to have a sorted set before beginning the search.
+Firstly, one picks the midpoint of the two endpoints of the set.
+If the target is smaller than element at midpoint, repeat the
+operation on the half with smaller elements, otherwise, do it on
+the one with larger elements. Repeat this until the right and left
+overlap or pass each other. If none of the midpoints is equal to
+the target, one knows that it is not in the set.
+</p>
+<a href="https://www.javatpoint.com/binary-search-in-java">
+    Read more here.</a>
+</div>
+<div class="col-md-6">
+<pre class = "prettyprint">
+import java.util.*;
+import java.io.*;
+
+public class BinarySearch {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+        int arr [] = new int [N];
+        for(int i = 0;i < N;i++)arr[i]=in.nextInt();
+        int target = in.nextInt();
+        Arrays.sort(arr);
+        int l = 0, r = N-1;
+        while(l < r){
+            int mid = (l+r)/2;
+            if(arr[mid] < target)l = mid+1;
+            else r = mid;
+            System.out.println(l + " " + r);
+        }
+        if(arr[l] == target)System.out.println("FOUND");
+        else System.out.println("NOT FOUND");
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="Sort">
+<div class="row">
+<div class="col-md-6">
+<h2>Sorting</h2>
+<p>
+What is sorting? It is simply ordering elements in a specific
+pattern, often by value or alphabetical order. There are many
+sorting algorithms, but the idea is to simply order a set of
+elements in a certain way. As the comparison between elements is
+just a single operation, we can assume withouth loss of generality
+that we are sorting from least to greatest. There are many sort
+algorithms such as bubble sort, insertion sort, and merge sort. I
+will be focusing on insertion sort and merge sort. Merge sort uses
+the idea of breaking down into halves and then reformation. For an
+array, break it down into left and right arrays, and keep on doing
+that for those arrays, until your array only consists of one
+element, then we start reformation, for each two subarrays, we
+merge them together by performing two pointers on them, which is
+basically to say we compare one element in one array with one in
+the other, as each of them are sorted, we simply iterate through
+checking each element and seeing which is smaller and pushing that
+one. When done, you have another sorted subarray that you can push
+up to do mergesort again. Repeat this until your entire array is
+sorted. This sorting algorithm takes NlogN time meaning
+theoretically it is faster than insertion sort, but with smaller
+datatypes, the randomness in them are enlarged, so the complexity
+of insertion sort may be as fast as linear time, while mergesort
+has a static time complexity.
+</p>
+<a href="https://www.javatpoint.com/merge-sort">
+Read more here.</a>
+</div>
+<div class="col-md-6">
+<pre class = "prettyprint">
+import java.util.*;
+public class MergeSort {
+    public static int [] mergeSort(int arr []){
+        if(arr.length <= 1)return arr;
+        int mid = (arr.length)/2;
+        int left [] = new int [mid];
+        int right [] = new int [arr.length-mid];
+        for(int i = 0;i < mid;i++)left[i]=arr[i];
+        for(int i = mid;i < arr.length;i++)right[i-mid]=arr[i];
+        int sorted [] = new int [arr.length];
+        left = mergeSort(left);
+        right = mergeSort(right);
+        merge(sorted,left, right);
+        return sorted;
+    }
+    private static int [] merge (int res [], int left [], int right []){
+        int i = 0,j = 0;
+        while(i < left.length || j < right.length){
+            if(i < left.length && j < right.length){
+                if(left[i] < right[j])
+                    res[i+j]=left[i++];
+                else
+                    res[i+j]=right[j++];
+            }
+            else if(i < left.length)
+                res[i+j]=left[i++];
+            else 
+                res[i+j]=right[j++];
+        }
+        return res;
+    }
+    public static void main(String[] args) {
+        
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="ISP">
+<div class="row">
+<div class="col-md-6">
+<h2>Final Project</h2>
+<p>
+Our final project is called Covid Dilemma and is a COVID-19 game
+that stimulates the pandemic that is happening right now. Our game
+allows for the user to make choices based off of intuition and
+their answer directly impacts how well they are doing
+financial-wise and health-wise. The use can choose two different
+gamemodes, they may play as Prime Minister or civilian. They will
+be in charge of different decisions depending on which game mode
+they choose and will have to be responsible for a different set
+and scale of people. The president also has a unique bird-eye view
+of the statistics on COVID-19 such as the infected numbers,
+percentage dead, etc. Overall, this is a great choose-your-path
+game that is perfect for intelligent gamers to play during
+quarantine.
+</p>
+</div>
+<div class="col-md-6">
+<img src="img/CovidDilemma.png" width="540px" height="360px" />
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/*Navigation*/
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-brand li{
+    padding-left: 0 10px;
+}.navbar-brand a{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #007bff!important;
+}
+.navbar{
+    background: #fff;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+/*CSS for the section*/
+#project{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #aaa
+}
+#project h1{
+    text-align: center;
+    color: #999 !important;
+    padding-bottom: 10px;
+}
+#project h1::after{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+/*CSS for OOP section*/
+#OOP{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #aaa
+}
+/*CSS for Array section*/
+#Arrays{
+    background-image: linear-gradient(rgba(220,220,220,0.8),rgba(220,220,220,0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #777
+}
+/*CSS for ArrayList section*/
+#ArrayList{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #aaa
+}
+/*CSS for Searching section*/
+#Search{
+    background-image: linear-gradient(rgba(220,220,220,0.8),rgba(220,220,220,0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #777
+}
+/*CSS for Sorting section*/
+#Sort{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #aaa
+}
+/*CSS for ISP section*/
+#ISP{
+    background-image: linear-gradient(rgba(220,220,220,0.8),rgba(220,220,220,0.8));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    color: #777
+}
